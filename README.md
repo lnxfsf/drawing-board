@@ -1,7 +1,7 @@
 # Drawing-board
 
 From 1x1 to 64x64 squares in drawing box<br>
-When on hover draw on boxes.<br>
+When on mouse hover draw on boxes.<br>
 Support `single color` user chosen from color picker, or `rainbow` colors (random colors), `eraser` (which deletes one by one square by hovering over that square), and `clear` which clears whole drawing box.<br>
 And there is `slider`, which changes size of squares in drawing box from 1x1 to 64x64.<br>
 
