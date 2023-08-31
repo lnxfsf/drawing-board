@@ -1,0 +1,277 @@
+
+
+
+
+
+body {
+
+	display: flex;
+	/*background: #E5E5E5; */
+	align-items: center;
+
+	/* backgroun gradient */
+	background-color: #4158D0;
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	animation: gradientBG 8.5s ease infinite;
+	background-size: 400% 400%;
+	margin: 7rem auto;
+
+	justify-content: center;
+	gap: 15%;
+	margin-top: 5%;
+
+	align-items: center;
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Styles for the slider track */
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 8px;
+	background-color: #ccc;
+	border-radius: 4px;
+	outline: none;
+	margin: 10px 0;
+
+	margin-top: 10%;
+
+}
+
+/* Styles for the slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* Hover styles for the slider thumb */
+input[type="range"]::-webkit-slider-thumb:hover {
+	background-color: #ddd;
+}
+
+/* Active styles for the slider thumb */
+input[type="range"]::-webkit-slider-thumb:active {
+	background-color: #aaa;
+}
+
+/* Additional styles for cross-browser compatibility */
+input[type="range"]::-moz-range-thumb {
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+	background-color: #ddd;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+	background-color: #aaa;
+}
+
+
+h1 {
+
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px 0;
+	margin: 0;
+
+}
+
+.menu {
+	display: flex;
+
+	flex-direction: column;
+
+}
+
+#grid { 
+	/* shadow under it.. */
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+	background: #FFFFFF;
+	display: grid; 
+	grid-template-columns: repeat(16, 1fr); 
+	grid-template-rows: repeat(16,1fr); 
+	width: 300px; 
+	height: 300px; 
+}
+
+
+
+
+
+
+
+
+/* rainbow button */
+
+#rainbow {
+
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.1em 0.1em 0;
+	border: 0.16em solid rgba(255, 255, 255, 0);
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+	text-align: center;
+	transition: all 0.2s;
+
+
+	background: linear-gradient(-45deg, #FFD700, #FF69B4, #00FF00, #00BFFF, #EE82EE);
+	animation: gradientBG 4.5s ease infinite;
+
+	transition: .3s;
+
+	background-size: 400% 400%;
+
+
+
+	width: 50%;
+	margin: auto;
+	margin-bottom: 2%;
+}
+
+/*
+#rainbow {
+/* reset 
+-webkit-appearance: none;
+border: 0;
+outline: 0;
+/* styles 
+position: relative; 
+
+display: inline-block;
+
+padding: 0.3em 1.2em;
+
+background: linear-gradient(-45deg, #FFD700, #FF69B4, #00FF00, #00BFFF, #EE82EE);
+/*	background: linear-gradient(-45deg, #ffd6d6,#faffb0,#c0ffb6,#d0ddff,#e1bfff); 
+background-size: 400% 400%;
+animation: gradientBG 4.5s ease infinite;
+/*padding: 1.5rem 10rem;
+color: white;
+transition: .3s;
+
+border-radius: 2em;
+}
+ */
+
+
+
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* rainbow button */
+
+
+
+
+
+
+/* ostali buttons */
+
+#eraser, #clear, #color  {
+	display: inline-block;
+	padding: 0.3em 1.2em;
+	margin: 0 0.1em 0.1em 0;
+	background: #00C853;
+	border: 0.16em solid rgba(255, 255, 255, 0);
+	border-radius: 2em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+	text-align: center;
+	transition: all 0.2s;
+
+	width: 50%;
+	margin: auto;
+
+	margin-bottom: 2%;
+
+
+}
+
+#eraser:hover, #clear:hover, #color:hover   {
+	border-color: rgba(255, 255, 255, 1);
+}
+
+@media all and (max-width: 30em) {
+	#eraser , #clear, #color  {
+		display: block;
+		margin: 0.2em auto;
+	}
+}
+
+
+
+
+
+/*------ Style for color picker ------*/
+#colorPicker {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+
+
+	margin-bottom: 10%;
+	margin-top: 5%;
+
+}
+#colorPicker::-webkit-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+#colorPicker::-moz-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Draw</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+
+
+
+		<div class="menu">
+
+			<h1>Drawing board</h1>
+
+
+			<input type="color" id="colorPicker">
+
+			<button id="color">Color</button>
+			<button id="rainbow">Rainbow</button>
+			<button id="eraser">Eraser</button>
+			<button id="clear">Clear</button>
+
+			<!-- da menja, na osnovu slidera, taj square box. 16 default value, a 64 max -->
+			<input type="range" min="1" max="64" value="16" id="slider">
+		</div>
+
+
+
+		<div id="grid"></div>
+
+		<script src="script.js"></script>
+
+	</body>
+</html>
+
