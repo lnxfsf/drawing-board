@@ -1,4 +1,4 @@
-# drawing-board
+# Drawing-board
 
 From 1x1 to 64x64 squares in drawing box<br>
 When on hover draw on boxes.<br>
